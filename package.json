@@ -19,7 +19,7 @@
     "react-simple-chatbot": "^0.6.1",
     "react-tsparticles": "^1.42.4",
     "react-typical": "^0.1.3",
-    "styled-components": "^6.1.11",
+    "styled-components": "^4.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

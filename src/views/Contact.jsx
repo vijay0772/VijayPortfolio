@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="mailto:aakash.sh858791@gmail.com"
+                  href="mailto:vijaybharvad0097@gmail.com"
                   className="underline text-blue-500"
                 >
                   Send me email directly

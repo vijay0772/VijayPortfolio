@@ -64,7 +64,7 @@ const projects = [
     description: "I developed Quickquizz, a quiz website built with Next.js. This platform allows users to take quiz tests by selecting from a variety of categories. The quiz questions are dynamically fetched using a REST API, providing a seamless and engaging user experience for quiz enthusiasts.    .",
     imageUrl: "https://i.ibb.co/FqxBsBD/logo-1.webp",
     readMoreLink: "#",
-    liveDemoLink: "https://marwiz.netlify.app/"
+    liveDemoLink: "https://quickquiz-for-you.netlify.app/"
   },
   
 ];

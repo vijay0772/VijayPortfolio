@@ -8,7 +8,7 @@ const projects = [
     description: "Developed the Quick-Serve Food Delivery app, integrating features for customers to register, browse menus, place orders, track deliveries, and provide feedback while enabling restaurants to manage menus, process orders, and update statuses. The app also provides tools for delivery personnel to handle tasks and update statuses, with system administrators overseeing operations and customer support resolving issues and collecting feedback.",
     imageUrl: "https://i.ibb.co/XY64DDH/Quickservee.png",
     readMoreLink: "#",
-    liveDemoLink: "https://marwiz.netlify.app/"
+    liveDemoLink: "https://404v.netlify.app/"
   },
   {
     id: 2,
@@ -65,6 +65,22 @@ const projects = [
     imageUrl: "https://i.ibb.co/FqxBsBD/logo-1.webp",
     readMoreLink: "#",
     liveDemoLink: "https://quickquiz-for-you.netlify.app/"
+  },
+  {
+    id: 9,
+    title: "Orbit-Guardinas",
+    description: "Developed an intuitive crisis management platform using React.js and Supabase, inspired by the solar system. The app features real-time data integration for maps, news, and resources, ensuring up-to-date information during crises. Overcame challenges with Supabase limitations and complex map integration, creating a user-friendly and visually engaging platform. Enhanced skills in API integration, backend tools, and collaboration.",
+    imageUrl: "https://i.ibb.co/Mf3gDQz/orbit.png",
+    readMoreLink: "https://github.com/jaygohel109/Orbit_Guardians",
+    liveDemoLink: "https://orbit-guardians.netlify.app/"
+  },
+  {
+    id: 10,
+    title: "PAST-PORT(MobileApp)",
+    description: "PastPort is an AI-powered chatbot app that revolutionizes history education by enabling users to converse with historical figures and explore significant events. Built with Flutter and the OpenAI API, it offers an interactive and personalized learning experience. Users can track their progress with a notebook feature and enjoy a seamless interface",
+    imageUrl: "https://i.ibb.co/h8gXFWK/pastportt.png",
+    readMoreLink: "https://github.com/jaygohel109/TaskFormer",
+    liveDemoLink: "https://www.youtube.com/watch?v=cB5GCnFQf-o"
   },
   
 ];

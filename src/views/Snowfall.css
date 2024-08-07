@@ -1,0 +1,31 @@
+/* Snowfall.css */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    color: #ffffff;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  @keyframes snowflakes-fall {
+    0% { top: -10%; }
+    100% { top: 100%; }
+  }
+  
+  @keyframes snowflakes-shake {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(80px); }
+  }
+  
+  .snowflake {
+    animation: snowflakes-fall 10s linear infinite, snowflakes-shake 3s ease-in-out infinite;
+    font-size: 2em;
+  }
+  
+  @media (min-width: 768px) {
+    .snowflake {
+      font-size: 1.5em;
+    }
+  }
+  

@@ -29,8 +29,7 @@ const About = () => {
                   ? "mt-4 text-xl text-justify text-gray-500"
                   : "mt-4 text-xl text-justify text-white"
               }
-            >
-              As a proactive and dedicated Computer Science student from the Illinois Institute of Technology, I possess a strong foundation in both theory and practical application of software development. I have honed a versatile skill set in languages and tools including HTML, CSS, Java, Python, React, Nodejs and PHP, complemented by hands-on experience with MySQL and MongoDB. My intern roles have enabled me to contribute significantly to projects, streamlining operations and enhancing user experiences. I excel in creating robust web applications and have a passion for leveraging technology to solve real-world problems.
+            >As a proactive Computer Science student at Illinois Institute of Technology, I possess a strong foundation in software development with skills in C, Java, Python, HTML, CSS, JavaScript, React.js, Node.js, and SQL. My experience includes internships where I engineered web applications, enhanced user experiences, and optimized systems, resulting in significant operational improvements. I've led projects like a food delivery app and a smart home e-commerce site, integrating advanced APIs and data processing techniques. I hold an Azure Fundamentals certification and am passionate about leveraging technology to solve real-world problems. My dedication and versatile skill set make me a valuable asset to any development team.
             </p>
           </motion.div>
           <motion.div

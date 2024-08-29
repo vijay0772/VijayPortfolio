@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react"; // Import only useEffect
 import "./Snowfall.css";
 
 const Snowfall = () => {

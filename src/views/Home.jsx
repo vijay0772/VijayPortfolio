@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
-import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-import cloud from "../assets/Vimjuport.png";
-import cloudDark from "../assets/finaldark.png";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Vijay_resume.pdf";
 import Snowfall from "./Snowfall"; // Import the custom Snowfall component
+import backgroundVideoLight from "../assets/light-mode-video.mp4"; // Your light mode video
+import backgroundVideoDark from "../assets/light-mode-video.mp4"; // Your dark mode video
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -15,87 +14,113 @@ const Home = () => {
 
   return (
     <>
-      <div
-        style={
-          darkMode
-            ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
-            : { backgroundImage: `url('${cloudDark}'`, backgroundSize: "cover" }
-        }
-      >
-        <Snowfall /> {/* Add the custom Snowfall component here */}
-        <main
-          className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen"
-          id="/"
+      <div className="relative w-full h-screen overflow-hidden">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 left-0 w-full h-full object-cover"
         >
-          <div className="sm:text-center lg:text-left">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <motion.span
-                className={darkMode ? "block text-black" : " text-white"}
-              >
-                Hi, I am Vijay Bharvad
-              </motion.span>
-              <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
-                    "Software Engineer",
-                    1000,
-                    "Full Stack Developer",
-                    1000,
-                  ]}
-                  loop={Infinity}
-                />
-              </span>
-            </h1>
-            <p
-              className={
-                darkMode
-                  ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-                  : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              }
+          <source
+            src={darkMode ? backgroundVideoDark : backgroundVideoLight}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Dark Overlay for Better Text Visibility */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
+
+        {/* Snowfall Effect */}
+        <Snowfall />
+
+        {/* Main Content */}
+        <main className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen px-6 lg:px-12">
+          <div className="sm:text-center lg:text-left text-white">
+            {/* Animated Heading */}
+            <motion.h1
+              className="text-5xl sm:text-6xl md:text-7xl font-extrabold"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
             >
-              I am a Software Engineer/ Full-Stack Developer. I am currently working at
-              NewEngland Investment Consulting Group as a Software Engineer Intern
-            </p>
-            <div className="flex md:justify-start ">
+              Hi, I am{" "}
+              <span className="text-blue-500 drop-shadow-lg">Vijay Bharvad</span>
+            </motion.h1>
+
+            {/* Animated Subheading with Typing Effect */}
+            <motion.div
+              className="text-3xl sm:text-4xl mt-3 font-bold drop-shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 1 }}
+            >
+              <Typical
+                steps={[
+                  "Software Engineer",
+                  1000,
+                  "Full Stack Developer",
+                  1000,
+                  "Tech Enthusiast",
+                  1000,
+                ]}
+                loop={Infinity}
+                wrapper="span"
+              />
+            </motion.div>
+
+            {/* Description */}
+            <motion.p
+              className="mt-5 text-lg sm:text-xl text-gray-200 max-w-2xl drop-shadow-md"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 1 }}
+            >
+              I am a passionate Software Engineer and Full-Stack Developer.
+              Currently pursuing my Master's in Computer Science at{" "}
+              <span className="text-blue-400 font-semibold">
+                Illinois Institute of Technology
+              </span>
+            </motion.p>
+
+            {/* Social Links */}
+            <motion.div
+              className="flex space-x-5 mt-6"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+            >
               {contactLinks.map((el) => (
                 <a
                   key={el.name}
                   href={el.link}
-                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer transform hover:scale-125 transition duration-300"
                 >
-                  <img alt={el.name} src={el.url} />
+                  <img alt={el.name} src={el.url} className="w-8 h-8" />
                 </a>
               ))}
-            </div>
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <a
-                  href={resume}
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  link="https://drive.google.com/file/d/1te69vTUAPqpeyhmgkKhTw50ivC5WO81J/view"
-                >
-                  Resume
-                </a>
-              </div>
-            </div>
+            </motion.div>
+
+            {/* Resume Button */}
+            <motion.div
+              className="mt-6 sm:mt-8"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.6 }}
+            >
+              <a
+                href={resume}
+                className="px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-md shadow-lg transition-all duration-300 hover:bg-blue-400 hover:scale-105 inline-block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Resume
+              </a>
+            </motion.div>
           </div>
-          <motion.img
-            initial="hidden"
-            whileInView={"visible"}
-            variants={{
-              visible: {
-                y: 0,
-                opacity: 1,
-                transition: {
-                  type: "spring",
-                },
-              },
-              hidden: { opacity: 1, y: 80 },
-            }}
-            src={heroBg}
-            alt="Hero Background"
-            className="md:w-3/6 hidden sm:block"
-          />
         </main>
       </div>
     </>

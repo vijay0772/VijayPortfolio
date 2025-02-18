@@ -29,7 +29,7 @@ const About = () => {
                   ? "mt-4 text-xl text-justify text-gray-500"
                   : "mt-4 text-xl text-justify text-white"
               }
-            >As a proactive Computer Science student at Illinois Institute of Technology, I possess a strong foundation in software development with skills in C, Java, Python, HTML, CSS, JavaScript, React.js, Node.js, and SQL. My experience includes internships where I engineered web applications, enhanced user experiences, and optimized systems, resulting in significant operational improvements. I've led projects like a food delivery app and a smart home e-commerce site, integrating advanced APIs and data processing techniques. I hold an Azure Fundamentals certification and am passionate about leveraging technology to solve real-world problems. My dedication and versatile skill set make me a valuable asset to any development team.
+>I am a Computer Science graduate student at Illinois Institute of Technology, specializing in full-stack development, AI integration, and cloud computing. With experience in enterprise AI solutions, API development, and scalable cloud architectures, I build intelligent and efficient applications that solve real-world challenges.
             </p>
           </motion.div>
           <motion.div

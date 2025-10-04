@@ -8,7 +8,7 @@ const projects = [
     description: "Developed the Quick-Serve Food Delivery app, integrating features for customers to register, browse menus, place orders, track deliveries, and provide feedback while enabling restaurants to manage menus, process orders, and update statuses. The app also provides tools for delivery personnel to handle tasks and update statuses, with system administrators overseeing operations and customer support resolving issues and collecting feedback.",
     imageUrl: "https://i.ibb.co/XY64DDH/Quickservee.png",
     readMoreLink: "#",
-    liveDemoLink: "https://404v.netlify.app/"
+    liveDemoLink: "https://quick-serve-phi.vercel.app/home"
   },
   {
     id: 2,

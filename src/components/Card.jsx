@@ -16,7 +16,7 @@ const projects = [
     description: "Developed an advanced blogging platform designed for academic communities, incorporating dynamic navigation and role-based access to enhance engagement among students, faculty, and staff, with features for creating, responding to, and moderating posts, along with administrative account management. Leveraged APIs such as OpenAI, SerpApi, and OpenWeatherMap for a smart chatbot, automated post responses, and live weather insights, while employing Elasticsearch and MongoDB for efficient content handling and secure access, and offering a subscription feature for personalized content alerts.",
     imageUrl: "https://cdn.elearningindustry.com/wp-content/uploads/2013/09/how-to-use-blogs-in-the-classroom.jpg",
     readMoreLink: "#",
-    liveDemoLink: "https://404v.netlify.app/"
+    liveDemoLink: "https://school-blogging-platformm-awf9.vercel.app/login"
   },
   {
     id: 3,
